@@ -1,0 +1,141 @@
+/* Base styles */
+
+body {
+    background-color: mistyrose;
+}
+
+body {
+    padding-top: 20px;
+    background: #f5f7f8;
+}
+
+.grid-1 {
+    display: grid;
+    width: 100%;
+    max-width: 770px;
+    margin: 10% auto;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px auto 80px;
+    grid-gap: 20px;
+
+    grid-template-areas: "header   header   header"
+        "main     main     sidebar"
+        "footer   footer   footer";
+}
+
+/* items */
+
+.grid-1 div {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+/* specific item styles */
+
+.item-1 {
+    background: #b03532;
+    grid-area: header;
+}
+
+.item-2 {
+    background: #33a8a5;
+    grid-area: main;
+
+    display: grid;
+
+    grid-template-columns: 1fr 30%;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+
+    grid-template-areas: "header header"
+        "article sidebar";
+
+}
+
+.item-3 {
+    background: #30997a;
+    grid-area: sidebar;
+}
+
+.item-4 {
+    background: #6a478f;
+    grid-area: footer;
+}
+
+.item-5 {
+    background: #da6f2b;
+    grid-area: header;
+}
+
+.item-6 {
+    background: #3d8bb1;
+    grid-area: article;
+}
+
+.item-7 {
+    background: #e03f3f;
+    grid-area: sidebar;
+}
+
+/* Begin by duplicating the first grid declaration,
+and wrapping the duplicate in a mobile-first media query (I’m using 500px as the breakpoint, but that’s completely arbitrary): */
+
+
+@media only screen and (max-width: 500px) {
+    .grid-1 {
+        display: grid;
+        width: 90%;
+        max-width: 770px;
+        margin: 10% auto;
+    
+        grid-template-columns: repeat(1, 10fr);
+        grid-template-rows: 80px auto 80px;
+        grid-gap: 20px;
+    
+        grid-template-areas: "header"
+            "main"
+            "sidebar"
+            "footer";
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .item-2 {
+        background: #33a8a5;
+        grid-area: main;
+    
+        display: grid;
+    
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        grid-gap: 20px;
+    
+        grid-template-areas: "header"
+            "article"
+            "sidebar"
+    
+    }
+    
+}
+
+@media only screen and (min-width: 501px) {
+    .grid-1 {
+        display: grid;
+        width: 90%;
+        max-width: 770px;
+        margin: 10% auto;
+    
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 80px auto 80px;
+        grid-gap: 20px;
+    
+        grid-template-areas: "header   header   header"
+        "main     main     sidebar"
+        "footer   footer   footer";
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+}
