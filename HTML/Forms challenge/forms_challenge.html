@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Online Survey (Coffee shop)</title>
+  </head>
+  <body>
+
+    <form action="#" method="post">
+      <table>
+        <tr>
+          <td>Name</td>
+          <td><input type="text" name="Name"></td>
+        </tr>
+        <tr>
+          <td>Contact Details</td>
+          <td><input type="number" name="Contact details" min="0" max="9"></td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td><select name="Gender">
+              <option value="M">Male</option>
+              <option value="F">Female</option>
+            </select>
+        </tr>
+        <tr>
+          <td>Date of birth</td>
+          <td><input type="date" name="Contact details" id="DOB"></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><input type="password" name="Password"></td>
+        </tr>
+
+        <tr>
+          <td align="center">How often do you visit coffee shops<td>
+            <td>
+              <input type="radio" value="Not at all" name="do not"> Not at all
+              <input type="radio" value="Seldom" name="Rarely"> Seldom
+              <input type="radio" value="Often" name="Often"> Often
+            </td>
+        </tr>
+      </table>
+
+    <table>
+      <tr>
+        <p>What is your favourite coffee shop?</p>
+        <style="list-style-type:square; text-align:center; list-style-position:inside;">
+          <textarea rows="3" cols="100"></textarea>
+        </style>
+          <p>Where is it located?</p>
+        <style="list-style-type:square; text-align:center; list-style-position:inside;">
+          <textarea rows="3" cols="100"></textarea>
+        </style>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <td>What do you typically order to drink?</td>
+        <td><select name="Alcohol Type">
+          <option value="V">Vodka</option>
+          <option value="W">Whiskey</option>
+          <option value="Br">Brandy</option>
+          <option value="V">Vermouth</option>
+          <option value="C">Cognac</option>
+          <option value="Be">Beer</option>
+          <option value="PW">Port Wine</option>
+          <option value="R">Rum</option>
+          <option value="G">Gin</option>
+          <option value="S">Soft drinks</option>
+          <option value="C">Cocktails</option>
+        </select>
+      </td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <td>Do you prefer large, national chain coffee shops or small, privately owned coffee shops?</td>
+        <td><select name="Type of coffe shop">
+          <option value="LNC">Large, National chain coffee shops</option>
+          <option value="SP">Small, privately owned coffee shops</option>
+        </td>
+        </select>
+        </tr>
+        </table>
+
+    </form>
+  </body>
+</html>

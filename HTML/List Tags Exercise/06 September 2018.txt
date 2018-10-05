@@ -1,0 +1,7 @@
+www.lifechoices.codespace.co.za
+
+Login and then click on 'Full stack development'
+On the left click Html
+Finnish until 'List tags exercise'
+
+Page 38 on the book

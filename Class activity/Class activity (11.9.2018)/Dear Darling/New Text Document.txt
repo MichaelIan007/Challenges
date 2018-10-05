@@ -1,0 +1,19 @@
+Write a letter to (Darling) to apologize that you missed dinner and that
+you want to make it up to her.
+
+Must have headings (h1 - h6^
+=Apologizing (5 line paragraph)
+
+Going to make up for it by making a romantic dinner session.
+=List of ingredients (unorder list)
+
+You have to ask (Darling) to take her out to the movies
+=a list of 5 movies to choose from as a dropdown list
+
+
+
+Question-Do you accept my apology?
+=Either check boxes or radio boxes with answer, Yes or No
+
+A place for (Darling) to reply
+=A form where she would be able to submit

@@ -1,0 +1,91 @@
+    p {
+        font-size: 13px;
+    }
+   /* Ribbon starts here */
+   .ribbon {
+    margin: 40px;
+    width: 240px;
+    height: 320px;
+    background: rgb(9, 255, 0);
+    border-radius: 7px;
+    -webkit-box-shadow: 0px 0px 8px;
+    -moz-box-shadow: 0px 0px 8px;
+    box-shadow: 0px 0px 8px;
+    position: relative;
+    z-index: 90;
+   }
+   
+   .ribbon-wrapper-red {
+    font: bold 15px sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 1px 0px;
+    transform: rotate(45deg);
+    position: relative;
+    padding: 8px 0;
+    left: -5px;
+    top: 15px;
+    width: 120px;
+    background-color: red;
+   }
+   
+   .ribbon-red {
+    width: 85px;
+    height: 88px;
+    overflow: hidden;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+   }
+   
+   .ribbon-red:before, .ribbon-red:after {
+    content: "";
+    border-top:   3px solid #6e8900;
+    border-left:  3px solid transparent;
+    border-right: 3px solid transparent;
+    position:absolute;
+    bottom: -3px;
+   }
+   
+   .ribbon-red:before {
+    left: 0;
+   }
+   
+   .ribbon-red:after {
+    right: 0;
+   }
+   /* Button "sale" animation starts */
+   a {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 125px;
+    height: 37px;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: fantasy;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 30px;
+  }
+  a:hover {
+      animation: animate 8s linear infinite;
+  }
+  @keyframes animate 
+  {
+        0%
+        {
+            background-position: 0%;
+        }
+        100%
+        {
+            background-position: 400%;
+        }
+  }
+  /* Button "sale" animation ends */

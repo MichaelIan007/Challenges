@@ -1,0 +1,63 @@
+.floating-box {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 3px solid red;
+}
+#one {
+    background: red;
+    border: red;
+    float: left;
+    
+}
+#two {
+    background: blue;
+    border: blue;
+    float: right;
+}
+
+#three {
+    background: green;
+    border: green;
+    float: left;
+}
+
+#four {
+    background: black;
+    border: black;
+    float: right;
+}
+
+#one:hover {
+    background: green;
+}
+
+#one:active {
+    background: purple;
+}
+
+#two:hover {
+    background: black;
+    width: 50px;
+}
+
+#two:active {
+    background: aqua;
+}
+
+#three:hover {
+    background: red;
+}
+
+#three:active {
+    background: white;
+}
+
+#four:hover {
+    background: blue;
+    width: 600px;
+}
+
+#four:active {
+    background: orange;
+}

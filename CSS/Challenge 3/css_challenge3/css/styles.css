@@ -1,0 +1,71 @@
+/* General setup */
+/* Remember to always comment*/
+
+* {
+  box-sizing: border-box;
+  box-
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background: white;
+  background-image: radial-gradient(circle, white 5%, darkgrey 80%);
+}
+article {
+  width: 210mm;
+  height: 297mm;
+  margin: 20px auto;
+  position: relative;
+  border-top: 1mm solid grey;
+  border-bottom: 1mm solid grey;
+}
+
+address {
+  position: absolute;
+  bottom: 8mm;
+  right: 20mm;
+}
+
+h1 {
+  position: absolute;
+  top: 12mm;
+  left: 15mm;
+  width: 128px;
+  height: 128px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding: 44px 0;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  background-image: url("../img/logo.png");
+  /* box-shadow: 30px 10px 11px grey; */
+  filter: drop-shadow(30px 10px 11px grey);
+  text-align: center;
+}
+
+/* Write your CSS below here */
+
+.fixed-top {
+  background-image: url(../img/top-image.png);
+  background-attachment: scroll;
+  min-height: 200px;
+  background-position: top;
+  background-size: cover;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.fixed-bottom {
+  background-image: url(../img/bottom-image.png);
+  background-attachment: scroll;
+  min-height: 200px;
+  background-position: bottom;
+  background-size: cover;
+  position: sticky;
+  bottom: 0;
+}

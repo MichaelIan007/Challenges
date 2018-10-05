@@ -1,0 +1,60 @@
+h1 {
+    color: red;
+}
+.footer {
+    color: red;
+}
+a:link {
+    color: Black;
+    font-size: 20px;
+}
+a:visited {
+    color: Green;
+    font-size: 10px;
+}
+a:hover {
+    color: rgb(38, 0, 255);
+    font-size: 22px;
+}
+a:active {
+    color: rgb(238, 255, 0);
+    font-size: 18px;
+}
+div * label {
+   
+}
+label {
+    color: red;
+}
+button {
+    color: blue;
+    font-size: 18px;
+}
+div {
+    color: green;
+}
+#Container {
+    color: Black;
+}
+html {
+    height: 100%;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    position: sticky;
+    min-height: 100%;
+    padding-bottom: 140px;
+    box-sizing: border-box;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 140px;
+}
+body {
+    text-align: center;
+}

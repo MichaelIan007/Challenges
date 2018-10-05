@@ -1,0 +1,21 @@
+.button {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    font-size: 1.0625rem;
+    /* 1px is equal to 0.0625rem */
+    color: #FF7417;
+    text-shadow: 2px 2px 2px black;
+    /* 1 pixel is equal to 0.0625 rem */
+    background-color: orange;
+    border-radius: 40px 15px;
+    border: 1px solid #964000;
+    background-image: linear-gradient(to top left, rgba(255,255,255,0.8), rgba(0,0,0,0.2));
+    box-shadow: 30px 10px 11px grey, inset 1px 1px rgba(255,255,255,0.5), inset -0.5px -0.5px rgba(0,0,0,0.5)
+  }
+
+body {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    width: 200px
+}

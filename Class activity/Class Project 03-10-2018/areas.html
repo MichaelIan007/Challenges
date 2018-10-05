@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <section class="items2">
+        </section>
+        <section class="items1">
+
+        </section>
+        <footer class="items5">
+
+        </footer>
+        <aside class="items4">
+
+        </aside>
+    </div>
+    <style>
+        body {
+            background: linear-gradient(124deg, red, black, green, blue);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .container {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 1fr 10fr 1fr;
+            grid-template-rows: 150px 150px 150px;
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            grid-template-areas:
+                "header header header"
+                "aside content content"
+                "aside footer footer"
+        }
+        .items1 {
+            grid-area: content;
+            background-color: lightgreen;
+        }
+        .items2 {
+            grid-area: header;
+            background-color: lightblue;
+        }
+        .items4 {
+            grid-area: aside;
+            background-color: lightcyan;
+        }
+        .items5 {
+            grid-area: footer;
+            background-color: lightgray;
+        }
+        @media only screen and (max-width: 480px){
+            .container {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 10fr;
+            grid-template-rows: 75px 100px 100px 50px;
+            margin-top: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+            grid-template-areas:
+                "header"
+                "content"
+                "aside"
+                "footer"
+                
+        }
+        .items1 {
+            grid-area: content;
+            background-color: lightgreen;
+        }
+        .items2 {
+            grid-area: header;
+            background-color: lightblue;
+        }
+        .items3 {
+            grid-area: content;
+            background-color: lightcoral;
+        }
+        .items4 {
+            grid-area: aside;
+            background-color: lightcyan;
+        }
+        .items5 {
+            grid-area: footer;
+            background-color: lightgray;
+        }
+        }
+        @media only screen and (min-width: 768px){
+            .container {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 1fr 10fr 1fr;
+            grid-template-rows: 150px 150px 150px;
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            grid-template-areas:
+                "header header header"
+                "aside content content"
+                "aside footer footer"
+        }
+        .items1 {
+            grid-area: content;
+            background-color: lightgreen;
+        }
+        .items2 {
+            grid-area: header;
+            background-color: lightblue;
+        }
+        .items4 {
+            grid-area: aside;
+            background-color: lightcyan;
+        }
+        .items5 {
+            grid-area: footer;
+            background-color: lightgray;
+        }
+        }
+    </style>
+</body>
+</html>
