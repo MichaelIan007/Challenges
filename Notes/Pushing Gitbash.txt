@@ -1,0 +1,12 @@
+Push to Cd(directory)
+
+git add .
+
+git commit -m (message) "message"
+
+git push -u origin master
+
+-username
+-password
+
+Then the prog will push

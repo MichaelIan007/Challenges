@@ -23,10 +23,7 @@ but adds the functionality of using variables and nesting code.
 
 launch the command 'sass --watch scss:css'
 
-## Live Link
-- https://evanryk.github.io/2018-10-09/
-
-## 
+##
 
 Prevalent Technologies Used
 
